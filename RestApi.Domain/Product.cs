@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RestApi.Domain
+namespace RestApi.Domain.Model
 {
     public class Product
     {
@@ -18,6 +19,7 @@ namespace RestApi.Domain
 
         [Required(ErrorMessage = "Esse campo é obrigatório")]
         [Range(1, int.MaxValue, ErrorMessage = "O preço deve ser maior que zero.")]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 
         [Required(ErrorMessage = "Esse campo é obrigatório")]

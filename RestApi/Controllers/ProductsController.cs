@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RestApi.Domain;
+using RestApi.Domain.Model;
 using RestApi.Infraestructure.Data;
 
 namespace RestApi.Application.Controllers

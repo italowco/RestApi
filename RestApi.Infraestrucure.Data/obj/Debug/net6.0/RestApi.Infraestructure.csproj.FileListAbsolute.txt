@@ -1,8 +1,6 @@
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.deps.json
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.dll
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.pdb
-C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.dll
-C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.pdb
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.csproj.AssemblyReference.cache
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.AssemblyInfoInputs.cache
@@ -13,3 +11,5 @@ C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\refint\RestApi.Infraestructure.dll
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.pdb
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\ref\RestApi.Infraestructure.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.Model.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.Model.pdb
