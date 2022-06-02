@@ -1,0 +1,15 @@
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.Data.deps.json
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.Data.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.Data.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.csproj.AssemblyReference.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.AssemblyInfoInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.AssemblyInfo.cs
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.csproj.CopyComplete
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\refint\RestApi.Infraestructure.Data.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.Data.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\ref\RestApi.Infraestructure.Data.dll

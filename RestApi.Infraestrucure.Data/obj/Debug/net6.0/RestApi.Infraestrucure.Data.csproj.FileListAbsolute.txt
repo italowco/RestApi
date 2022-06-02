@@ -1,0 +1,5 @@
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestrucure.Data.csproj.AssemblyReference.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestrucure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestrucure.Data.AssemblyInfoInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestrucure.Data.AssemblyInfo.cs
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestrucure.Data.csproj.CoreCompileInputs.cache
