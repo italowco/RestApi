@@ -9,13 +9,24 @@ namespace RestApi.Application.Controllers
     [Route("v1/services")]
     public class ServicesController : Controller
     {
+        public readonly IScopedService scopedService2;
+        public readonly ITransientService transientService2;
+        public readonly ISingletonService singletonService2;
+
+        public ServicesController(IScopedService scopedService2, ITransientService transientService2, ISingletonService singletonService2)
+        {
+            this.scopedService2 = scopedService2;
+            this.transientService2 = transientService2;
+            this.singletonService2 = singletonService2;
+        }
+
         [HttpGet]
         [Route("singleton")]
         public IActionResult GetSingleton([FromServices] ISingletonService singletonService)
         {
             var time = DateTime.Now;
             
-            return Ok(new Response { Status = time.ToString(), Message = singletonService.GetInfo() });
+            return Ok(new Response { Status = time.ToString(), Message = singletonService.GetInfo()  });
         }
 
         [HttpGet]
