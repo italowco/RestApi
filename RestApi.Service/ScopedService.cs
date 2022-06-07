@@ -12,15 +12,19 @@ namespace RestApi.Service
         public ScopedService()
         {
             Guid = Guid.NewGuid();
+            instanceDate = DateTime.Now;
+
         }
 
         public Guid Guid { get; set; }
 
+        public DateTime instanceDate { get; set; }
 
-        
-        public Guid GetInfo()
+
+
+        public string GetInfo()
         {
-            return Guid;
+            return $"Instancia criada em: {instanceDate}, Guid: {Guid}";
         }
     }
 }

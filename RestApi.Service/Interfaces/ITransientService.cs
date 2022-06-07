@@ -8,6 +8,6 @@ namespace RestApi.Service.Interfaces
 {
     public interface ITransientService
     {
-        public Guid GetInfo();
+        public string GetInfo();
     }
 }

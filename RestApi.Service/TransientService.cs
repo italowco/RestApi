@@ -12,15 +12,17 @@ namespace RestApi.Service
         public TransientService()
         {
             Guid = Guid.NewGuid();
+            date = DateTime.Now;
+
         }
 
         public Guid Guid { get; set; }
 
+        public DateTime date { get; set; }
 
-
-        public Guid GetInfo()
+        public string GetInfo()
         {
-            return Guid;
+            return $"Instancia criada em: {date}, Guid: {Guid}";
         }
     }
 }

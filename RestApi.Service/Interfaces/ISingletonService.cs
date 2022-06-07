@@ -8,7 +8,6 @@ namespace RestApi.Service.Interfaces
 {
     public interface ISingletonService
     {
-        public Guid GetInfo();
-
+        public string GetInfo();
     }
 }

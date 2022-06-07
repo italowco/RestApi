@@ -37,16 +37,18 @@ namespace RestApi.Application.Controllers
 
             if (ModelState.IsValid)
             {
-                var category = context.Categories.Find(product.CategoryId);
-
-                if (category != null)
+                
+                try
                 {
                     context.Add(product);
                     await context.SaveChangesAsync();
                     return product;
-                }
 
-                return StatusCode(StatusCodes.Status404NotFound, new Response { Status = "Not Found", Message = "Catégoria nao existe" });
+                } 
+                catch
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, new Response { Status = "Not Found", Message = "Catégoria nao existe" });
+                }
 
 
             }

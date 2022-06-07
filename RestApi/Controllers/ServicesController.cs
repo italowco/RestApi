@@ -15,7 +15,7 @@ namespace RestApi.Application.Controllers
         {
             var time = DateTime.Now;
             
-            return Ok(new Response { Status = time.ToString(), Message = singletonService.GetInfo().ToString() });
+            return Ok(new Response { Status = time.ToString(), Message = singletonService.GetInfo() });
         }
 
         [HttpGet]
@@ -24,7 +24,7 @@ namespace RestApi.Application.Controllers
         {
             var time = DateTime.Now;
 
-            return Ok(new Response { Status = time.ToString(), Message = scopedService.GetInfo().ToString() });
+            return Ok(new Response { Status = time.ToString(), Message = scopedService.GetInfo() });
         }
 
         [HttpGet]
@@ -33,7 +33,7 @@ namespace RestApi.Application.Controllers
         {
             var time = DateTime.Now;
 
-            return Ok(new Response { Status = time.ToString(), Message = transientService.GetInfo().ToString() });
+            return Ok(new Response { Status = time.ToString(), Message = transientService.GetInfo() });
         }
     }
 }
