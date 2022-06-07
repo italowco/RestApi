@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Application", "RestApi\RestApi.Application.csproj", "{A5D16A06-4370-4F45-ACA4-68F2D0B3DA13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Application", "RestApi\RestApi.Application.csproj", "{A5D16A06-4370-4F45-ACA4-68F2D0B3DA13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Domain.Model", "RestApi.Domain\RestApi.Domain.Model.csproj", "{247BF6E0-9029-47CA-AFAC-C7B8D1E47A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Domain.Model", "RestApi.Domain\RestApi.Domain.Model.csproj", "{247BF6E0-9029-47CA-AFAC-C7B8D1E47A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Service", "RestApi.Service\RestApi.Service.csproj", "{5B5CE535-38F3-428D-9145-4EE54C528BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Service", "RestApi.Service\RestApi.Service.csproj", "{5B5CE535-38F3-428D-9145-4EE54C528BA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{A4BA1EE0-098E-433B-8C76-99B18A1F02D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Infraestructure", "RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj", "{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Infraestructure", "RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj", "{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A366BB3B-50EA-4D68-BBE4-9F638A1F5B71}"
 EndProject
@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C21DD6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5014AE6D-578E-4199-819A-CBF33BD53817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Domain.TO", "RestApi.Domain.TO\RestApi.Domain.TO.csproj", "{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Domain.TO", "RestApi.Domain.TO\RestApi.Domain.TO.csproj", "{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

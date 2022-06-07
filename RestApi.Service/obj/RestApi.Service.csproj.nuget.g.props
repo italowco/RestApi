@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\italo\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\italo\.nuget\packages\entityframework\6.1.0</PkgEntityFramework>
+  </PropertyGroup>
 </Project>

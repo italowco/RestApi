@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestApi.Domain.Model;
+using RestApi.Domain.TO;
 using RestApi.Infraestructure.Data;
 
 namespace RestApi.Application.Controllers
@@ -34,12 +35,20 @@ namespace RestApi.Application.Controllers
         public async Task<ActionResult<Product>> Post([FromServices] DataContext context, [FromBody] Product product)
         {
 
-
             if (ModelState.IsValid)
             {
-                context.Add(product);
-                await context.SaveChangesAsync();
-                return product;
+                var category = context.Categories.Find(product.CategoryId);
+
+                if (category != null)
+                {
+                    context.Add(product);
+                    await context.SaveChangesAsync();
+                    return product;
+                }
+
+                return StatusCode(StatusCodes.Status404NotFound, new Response { Status = "Not Found", Message = "Catégoria nao existe" });
+
+
             }
             else
             {
