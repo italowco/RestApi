@@ -6,7 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using RestApi.Domain.TO;
 using RestApi.Domain.Model;
-using RestApi.Service;
+using RestApi.Service.Interfaces;
 
 namespace RestApi.Application.Controllers
 {
@@ -30,7 +30,7 @@ namespace RestApi.Application.Controllers
 
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> Login([FromServices] TokenService tokenService,  [FromBody] LoginTO model)
+        public async Task<IActionResult> Login([FromServices] ITokenService tokenService,  [FromBody] LoginTO model)
         {
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
