@@ -5,6 +5,6 @@ namespace RestApi.Service.Interfaces
 {
     public interface ITokenService
     {
-        public JwtSecurityToken GetToken(List<Claim> claims);
+        public JwtSecurityToken GetToken(List<Claim> authClaims);
     }
 }
