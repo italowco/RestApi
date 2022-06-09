@@ -6,19 +6,30 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using System.Text;
 using RestApi.Service.Interfaces;
+using RequestLoggingMiddleware.Logging;
+using Elmah.Io.Extensions.Logging;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-// Add services to the container
-//public Startup(IConfiguration configuration)
-//{
-//    Configuration = configuration;
-//}
-
-//public IConfiguration Configuration { get; }
-
 IConfiguration configuration = builder.Configuration;
+
+if (builder.Environment.IsDevelopment())
+{
+
+    builder.Host.ConfigureLogging(logging => {
+        logging.ClearProviders();
+        
+        logging.AddElmahIo(options =>
+        {
+            options.ApiKey = "603d3feaed0b45379cb3c1cbbbc26a5b";
+            options.LogId = new Guid("4454945c-49c0-424d-9694-2b6ea0d209ce");
+        });
+        logging.AddFilter<ElmahIoLoggerProvider>(null, LogLevel.Information);
+    });
+}
+
 
 builder.Services.AddControllers();
 
@@ -47,7 +58,8 @@ builder.Services.Configure<IdentityOptions>(options =>
                 options.Password.RequiredUniqueChars = 1;
 });
 
-// Adding Authentication
+
+#region .:Serviço de Autenticação:.
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -68,6 +80,7 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]))
     };
 });
+#endregion
 
 
 builder.Services.AddScoped<ITokenService, TokenService>();
@@ -79,13 +92,30 @@ builder.Services.AddSingleton<ISingletonService, SingletonService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-//app.MapGet("/", () => "Hello World!");
+#region Custom Middlewares
+//app.Use(async (context, next) =>
+//{
+//    // Do work that can write to the Response.
+//    await next.Invoke();
+//    // Do logging or other work that doesn't write to the Response.
+//});
+
+//app.Run(async context =>
+//{
+//    await context.Response.WriteAsJsonAsync( new { messsage = "Hello world" });
+
+//});
+
+
+//app.UseMiddleware<RequestLogging>(); 
+#endregion
 
 app.UseRouting();
 

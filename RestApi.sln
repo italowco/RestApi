@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5014
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Domain.TO", "RestApi.Domain.TO\RestApi.Domain.TO.csproj", "{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{34CD5A7B-3F7C-4B1B-A63C-ECF3BA92A492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middleware", "RequestLoggingMiddleware\Middleware.csproj", "{4B138800-F90B-453E-8F0A-7B675F9BB664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{5B5CE535-38F3-428D-9145-4EE54C528BA6} = {5014AE6D-578E-4199-819A-CBF33BD53817}
 		{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4} = {A4BA1EE0-098E-433B-8C76-99B18A1F02D9}
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9} = {C21DD6C4-13FB-44F7-8D93-8F8C4A446E81}
+		{4B138800-F90B-453E-8F0A-7B675F9BB664} = {34CD5A7B-3F7C-4B1B-A63C-ECF3BA92A492}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69200A57-6AAE-46F3-8417-664890920771}

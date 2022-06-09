@@ -77,3 +77,8 @@ C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\RestApi.Domain.Mod
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\RestApi.Domain.TO.dll
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\RestApi.Domain.TO.pdb
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\RestApi.Domain.Model.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Middleware.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Middleware.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Elmah.Io.Client.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Elmah.Io.Extensions.Logging.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Newtonsoft.Json.dll

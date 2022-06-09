@@ -14,7 +14,12 @@ namespace RestApi.Service
     public class TokenService : ITokenService
     {
         private readonly IConfiguration configuration;
-        
+
+        public TokenService(IConfiguration configuration)
+        {
+            this.configuration = configuration;
+        }
+
         public JwtSecurityToken GetToken(List<Claim> authClaims)
         {
             var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]));

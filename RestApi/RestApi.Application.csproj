@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RequestLoggingMiddleware\Middleware.csproj" />
     <ProjectReference Include="..\RestApi.Domain.TO\RestApi.Domain.TO.csproj" />
     <ProjectReference Include="..\RestApi.Domain\RestApi.Domain.Model.csproj" />
     <ProjectReference Include="..\RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj" />

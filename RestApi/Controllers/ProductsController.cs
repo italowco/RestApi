@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestApi.Domain.Model;
 using RestApi.Domain.TO;
@@ -6,6 +7,7 @@ using RestApi.Infraestructure.Data;
 
 namespace RestApi.Application.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("v1/products")]
     public class ProductController : ControllerBase

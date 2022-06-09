@@ -11,7 +11,8 @@
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.3",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.5",
           "Microsoft.EntityFrameworkCore": "6.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
+          "Microsoft.Extensions.Logging": "6.0.0"
         },
         "runtime": {
           "RestApi.Service.dll": {}
