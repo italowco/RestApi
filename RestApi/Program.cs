@@ -8,7 +8,7 @@ using System.Text;
 using RestApi.Service.Interfaces;
 using RequestLoggingMiddleware.Logging;
 using Elmah.Io.Extensions.Logging;
-
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -83,6 +83,31 @@ builder.Services.AddAuthentication(options =>
 #endregion
 
 
+builder.Services.AddMassTransit(x =>
+{
+    x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+    {
+
+        cfg.UseHealthCheck(provider);
+        cfg.Host(new Uri("rabbitmq://localhost:5672"), h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+
+        //cfg.ReceiveEndpoint("produckQueue", ep =>
+        //{
+        //    ep.PrefetchCount = 10;
+        //    ep.UseMessageRetry(r => r.Interval(2, 100));
+        //    ep.ConfigureConsumer<ProductConsumer>(provider);
+        //});
+
+    }));
+});
+
+
+builder.Services.AddMassTransitHostedService();
+
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Services.AddScoped<IScopedService, ScopedService>();
@@ -109,12 +134,12 @@ if (app.Environment.IsDevelopment())
 
 //app.Run(async context =>
 //{
-//    await context.Response.WriteAsJsonAsync( new { messsage = "Hello world" });
+//    await context.Response.WriteAsJsonAsync(new { messsage = "Hello world" });
 
 //});
 
 
-//app.UseMiddleware<RequestLogging>(); 
+app.UseMiddleware<RequestLogging>(); 
 #endregion
 
 app.UseRouting();

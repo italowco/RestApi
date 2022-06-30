@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y1MlVrNlA6wjJK+nS+BwDmd/eF2/idqiK8FBQAqZCHCMfl6PFavv9VSL5tQgX4t7jqp3HTVS8Qx34Q3TokoJ6Q==",
+  "dgSpecHash": "5wwS9xY7pLhWaFprAZj2jqB5yYlnLM4hYni7ZLW81FfO4V2C0IugX33NWTnxMsoENZd6n1pcECfjlWp8/B4TRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\italo\\source\\trucks\\RestApi\\RestApi.Service\\RestApi.Service.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.3\\microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.5\\microsoft.aspnetcore.authentication.jwtbearer.6.0.5.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.0.10\\microsoft.aspnetcore.odata.8.0.10.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -32,9 +34,14 @@
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.odata.core\\7.9.4\\microsoft.odata.core.7.9.4.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.odata.edm\\7.9.4\\microsoft.odata.edm.7.9.4.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.odata.modelbuilder\\1.0.8\\microsoft.odata.modelbuilder.1.0.8.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.spatial\\7.9.4\\microsoft.spatial.7.9.4.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
@@ -47,6 +54,8 @@
     "C:\\Users\\italo\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": [

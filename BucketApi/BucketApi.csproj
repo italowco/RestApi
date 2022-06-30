@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>918ad541-99c9-4608-ad96-d7d51aa5a057</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestApi.Domain.TO\RestApi.Domain.TO.csproj" />
+    <ProjectReference Include="..\RestApi.Domain\RestApi.Domain.Model.csproj" />
+    <ProjectReference Include="..\RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj" />
+    <ProjectReference Include="..\RestApi.Service\RestApi.Service.csproj" />
+  </ItemGroup>
+
+</Project>

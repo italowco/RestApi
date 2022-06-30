@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bbJqvemTwsxPjHJu0t2qVGgQXxs07vy4MsIe43/NcxXvU7ek+QPb3JatKLDhwDtb+GrWELhhMk/5VX1yzO2NyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\italo\\source\\trucks\\RestApi\\OrderAplication\\OrderAplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}

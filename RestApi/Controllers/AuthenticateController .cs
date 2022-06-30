@@ -29,7 +29,6 @@ namespace RestApi.Application.Controllers
         [Route("login")]
         public async Task<IActionResult> Login([FromServices] ITokenService tokenService,  [FromBody] LoginTO model)
         {
-            _logger.LogInformation("LOGIN called.");
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {

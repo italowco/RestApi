@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fAwIwBOzEPGQ4oBq5RbEboOzCe6YEHF2XPOBGW/HfSA=",
+  "Source": "BucketApi",
+  "BasePath": "_content/BucketApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

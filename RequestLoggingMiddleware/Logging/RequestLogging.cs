@@ -25,14 +25,13 @@ namespace RequestLoggingMiddleware.Logging
                 DateTime dateTime = DateTime.Now;
 
                 _logger.LogInformation(
-                    "[{dateTime}] Request {method} {url} => {statusCode}",
+                    "[{dateTime}] Request {method} Header = {header} {url} => {statusCode}",
                     dateTime,
                     context.Request?.Method,
+                    context.Request?.Headers,
                     context.Request?.Path.Value,
                     context.Response?.StatusCode
                     );
-
-                //_logger.LogError("Stay out of my territory");
 
             }
         }

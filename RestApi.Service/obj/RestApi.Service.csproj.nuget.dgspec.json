@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"
