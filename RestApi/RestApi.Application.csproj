@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
@@ -18,10 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RequestLoggingMiddleware\Middleware.csproj" />
     <ProjectReference Include="..\RestApi.Domain.TO\RestApi.Domain.TO.csproj" />
     <ProjectReference Include="..\RestApi.Domain\RestApi.Domain.Model.csproj" />
     <ProjectReference Include="..\RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj" />
     <ProjectReference Include="..\RestApi.Service\RestApi.Service.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="`" /></VisualStudio></ProjectExtensions>
 
 </Project>

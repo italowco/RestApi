@@ -1,0 +1,12 @@
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\bin\Debug\net6.0\RequestLoggingMiddleware.deps.json
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\bin\Debug\net6.0\RequestLoggingMiddleware.dll
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\bin\Debug\net6.0\RequestLoggingMiddleware.pdb
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.csproj.AssemblyReference.cache
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.AssemblyInfoInputs.cache
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.AssemblyInfo.cs
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.csproj.CoreCompileInputs.cache
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.dll
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\refint\RequestLoggingMiddleware.dll
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\RequestLoggingMiddleware.pdb
+C:\Users\italo\source\trucks\RestApi\RequestLoggingMiddleware\obj\Debug\net6.0\ref\RequestLoggingMiddleware.dll

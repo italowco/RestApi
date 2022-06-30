@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Application", "RestApi\RestApi.Application.csproj", "{A5D16A06-4370-4F45-ACA4-68F2D0B3DA13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Application", "RestApi\RestApi.Application.csproj", "{A5D16A06-4370-4F45-ACA4-68F2D0B3DA13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Domain.Model", "RestApi.Domain\RestApi.Domain.Model.csproj", "{247BF6E0-9029-47CA-AFAC-C7B8D1E47A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Domain.Model", "RestApi.Domain\RestApi.Domain.Model.csproj", "{247BF6E0-9029-47CA-AFAC-C7B8D1E47A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Service", "RestApi.Service\RestApi.Service.csproj", "{5B5CE535-38F3-428D-9145-4EE54C528BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Service", "RestApi.Service\RestApi.Service.csproj", "{5B5CE535-38F3-428D-9145-4EE54C528BA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{A4BA1EE0-098E-433B-8C76-99B18A1F02D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Infraestructure", "RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj", "{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Infraestructure", "RestApi.Infraestrucure.Data\RestApi.Infraestructure.csproj", "{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A366BB3B-50EA-4D68-BBE4-9F638A1F5B71}"
 EndProject
@@ -19,7 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C21DD6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5014AE6D-578E-4199-819A-CBF33BD53817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Domain.TO", "RestApi.Domain.TO\RestApi.Domain.TO.csproj", "{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi.Domain.TO", "RestApi.Domain.TO\RestApi.Domain.TO.csproj", "{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{34CD5A7B-3F7C-4B1B-A63C-ECF3BA92A492}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middleware", "RequestLoggingMiddleware\Middleware.csproj", "{4B138800-F90B-453E-8F0A-7B675F9BB664}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TesteRabbitMQ", "TesteRabbitMQ", "{D616EDE0-EAC9-4AC4-9B10-5C83633A5C58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "Consumer\Consumer.csproj", "{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "Publisher\Publisher.csproj", "{544C4CBC-EDE0-4913-962B-B67F61A36AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.Bucket", "RestApi.Bucket\RestApi.Bucket.csproj", "{81C5D8D0-C81C-453A-821E-9EE3D8F868FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +59,22 @@ Global
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B138800-F90B-453E-8F0A-7B675F9BB664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{544C4CBC-EDE0-4913-962B-B67F61A36AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544C4CBC-EDE0-4913-962B-B67F61A36AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544C4CBC-EDE0-4913-962B-B67F61A36AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544C4CBC-EDE0-4913-962B-B67F61A36AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C5D8D0-C81C-453A-821E-9EE3D8F868FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C5D8D0-C81C-453A-821E-9EE3D8F868FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C5D8D0-C81C-453A-821E-9EE3D8F868FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C5D8D0-C81C-453A-821E-9EE3D8F868FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +85,10 @@ Global
 		{5B5CE535-38F3-428D-9145-4EE54C528BA6} = {5014AE6D-578E-4199-819A-CBF33BD53817}
 		{69B5A71E-44A6-4FD6-9F77-613F5C7CA5A4} = {A4BA1EE0-098E-433B-8C76-99B18A1F02D9}
 		{4C952B3E-E1FB-43EF-B1FD-3828278A15F9} = {C21DD6C4-13FB-44F7-8D93-8F8C4A446E81}
+		{4B138800-F90B-453E-8F0A-7B675F9BB664} = {34CD5A7B-3F7C-4B1B-A63C-ECF3BA92A492}
+		{0AC510D0-6BC7-4D52-8A73-5B00E9BA8C8A} = {D616EDE0-EAC9-4AC4-9B10-5C83633A5C58}
+		{544C4CBC-EDE0-4913-962B-B67F61A36AAE} = {D616EDE0-EAC9-4AC4-9B10-5C83633A5C58}
+		{81C5D8D0-C81C-453A-821E-9EE3D8F868FE} = {A366BB3B-50EA-4D68-BBE4-9F638A1F5B71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69200A57-6AAE-46F3-8417-664890920771}
