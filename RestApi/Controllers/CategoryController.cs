@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using RestApi.Domain.Model;
 using RestApi.Infraestructure.Data;
+using RestApi.Infraestructure.Repositories;
 
 namespace RestApi.Application.Controllers
 {
@@ -39,7 +40,7 @@ namespace RestApi.Application.Controllers
         [Route("{id:int}")]
         public async Task<ActionResult<Category>> GetById([FromServices] DataContext context, int id)
         {
-            Category category = await context.Categories.FirstOrDefaultAsync(c => c.id == id);
+            Category category = await context.Categories.FirstOrDefaultAsync(c => c.Id == id);
 
             if (category == null) return NotFound();
 
@@ -48,14 +49,14 @@ namespace RestApi.Application.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<ActionResult> DeleteById([FromServices] DataContext context, int id)
+        public async Task<ActionResult> DeleteById([FromServices] ICategoryRepository repository, int id)
         {
-            Category category = await context.Categories.FirstOrDefaultAsync(c => c.id == id);
+            Category category = await repository.Get().FirstOrDefaultAsync(c => c.Id == id);
 
             if (category == null) return NotFound();
 
-            context.Categories.Remove(category);
-            var response = context.SaveChanges();
+            await repository.DeleteAsync(category);
+            var response = await repository.SaveChangesAsync();
 
             return Ok();
         }

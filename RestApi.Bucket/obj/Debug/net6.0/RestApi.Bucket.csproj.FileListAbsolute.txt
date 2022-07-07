@@ -44,3 +44,6 @@ C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\obj\Debug\net6.0\refint\Rest
 C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\obj\Debug\net6.0\RestApi.Bucket.pdb
 C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\obj\Debug\net6.0\RestApi.Bucket.genruntimeconfig.cache
 C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\obj\Debug\net6.0\ref\RestApi.Bucket.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Bucket\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "gRy6O7xuyGfF+A0VhtRT49Rg2RWYUhylaEwARPpobFlWT5GPsUH5ZLCK/u4/9OxDhN8xhamMa9q4ePvoDBiV5A==",
+  "dgSpecHash": "27wQ1m1U3baSVJ87gshWmyNulokhWA8aW1DJI9rLP3nofbC8e+ia1IrgjYU/7ckVlicu8zqcLxaa2mjVEJl+8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\italo\\source\\trucks\\RestApi\\RestApi.Domain\\RestApi.Domain.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\italo\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
-    "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.3\\microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512"
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.3\\microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": [
     {

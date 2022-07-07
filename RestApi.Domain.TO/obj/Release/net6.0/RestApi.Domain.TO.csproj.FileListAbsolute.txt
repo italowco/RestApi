@@ -1,0 +1,12 @@
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\bin\Release\net6.0\RestApi.Domain.TO.deps.json
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\bin\Release\net6.0\RestApi.Domain.TO.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\bin\Release\net6.0\RestApi.Domain.TO.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.csproj.AssemblyReference.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.AssemblyInfoInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.AssemblyInfo.cs
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.csproj.CoreCompileInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\refint\RestApi.Domain.TO.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\RestApi.Domain.TO.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Domain.TO\obj\Release\net6.0\ref\RestApi.Domain.TO.dll

@@ -97,3 +97,17 @@ C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Automatonymous.dll
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\GreenPipes.dll
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\NewId.dll
 C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\libman.json
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Z.EntityFramework.Extensions.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Z.EntityFramework.Plus.EF6.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\Z.Expressions.Eval.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\italo\source\trucks\RestApi\RestApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

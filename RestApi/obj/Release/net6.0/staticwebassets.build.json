@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VrCQSXfvJlm/5ggt7xWOCBgRf7LtiTrZIOXXCv+xRco=",
+  "Source": "RestApi.Application",
+  "BasePath": "_content/RestApi.Application",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

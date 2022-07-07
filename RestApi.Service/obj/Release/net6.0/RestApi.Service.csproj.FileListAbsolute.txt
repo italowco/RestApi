@@ -1,0 +1,12 @@
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\bin\Release\net6.0\RestApi.Service.deps.json
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\bin\Release\net6.0\RestApi.Service.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\bin\Release\net6.0\RestApi.Service.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.csproj.AssemblyReference.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.AssemblyInfoInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.AssemblyInfo.cs
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.csproj.CoreCompileInputs.cache
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\refint\RestApi.Service.dll
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\RestApi.Service.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Service\obj\Release\net6.0\ref\RestApi.Service.dll

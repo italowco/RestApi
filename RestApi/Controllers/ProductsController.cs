@@ -1,10 +1,14 @@
-﻿using MassTransit;
+﻿using FluentValidation.Results;
+using MassTransit;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestApi.Domain.Model;
+using RestApi.Domain.Model.Validators;
 using RestApi.Domain.TO;
 using RestApi.Infraestructure.Data;
+using RestApi.Infraestructure.Repositories;
+using Response = RestApi.Domain.TO.Response;
 
 namespace RestApi.Application.Controllers
 {
@@ -22,18 +26,18 @@ namespace RestApi.Application.Controllers
 
         [HttpGet]
         [Route("")]
-        public async Task<ActionResult<List<Product>>> Get([FromServices] DataContext context)
+        public async Task<ActionResult<List<Product>>> Get([FromServices] IProductRepository repository)
         {
-            var products = await context.Products.Include(p => p.Category).ToListAsync();
+            var products = await repository.Get().Include(p => p.Category).ToListAsync();
 
             return products;
         }
 
         [HttpGet]
         [Route("{id:int}")]
-        public async Task<ActionResult<Product>> GetById([FromServices] DataContext context, int id)
+        public async Task<ActionResult<Product>> GetById([FromServices] IProductRepository repository, int id)
         {
-            var products = await context.Products.Include(p => p.Category)
+            var products = await repository.Get().Include(p => p.Category)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(p => p.Id == id);
 
@@ -42,29 +46,31 @@ namespace RestApi.Application.Controllers
 
         [HttpPost]
         [Route("")]
-        public async Task<ActionResult<Product>> Post([FromServices] DataContext context, [FromBody] Product product)
+        public async Task<ActionResult<Product>> Post([FromServices] IProductRepository repository, [FromBody] Product product)
         {
-
-            if (ModelState.IsValid)
+            CreateProductValidator productValidator = new();
+            var validatorResult = productValidator.Validate(product);
+            
+            if (validatorResult.IsValid)
             {
                 
-                try
-                {
-                    context.Add(product);
-                    await context.SaveChangesAsync();
-                    return product;
-
-                } 
-                catch
-                {
-                    return StatusCode(StatusCodes.Status404NotFound, new RestApi.Domain.TO.Response { Status = "Not Found", Message = "Catégoria nao existe" });
-                }
-
+                //context.Add(product);
+                await repository.AddAsync(product);
+                return product;
 
             }
             else
             {
-                return BadRequest(ModelState);
+                
+                List<string> ValidationMessages = new List<string>();
+
+                foreach (ValidationFailure failure in validatorResult.Errors)
+                {
+                    ValidationMessages.Add(failure.ErrorMessage);
+                }
+                var response = new ResponseTO("Bad request", ValidationMessages);
+
+                return BadRequest(response);
             }
         }
 

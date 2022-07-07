@@ -13,3 +13,5 @@ C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\ref\RestApi.Infraestructure.dll
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.Model.dll
 C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Domain.Model.pdb
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\bin\Debug\net6.0\RestApi.Infraestructure.runtimeconfig.json
+C:\Users\italo\source\trucks\RestApi\RestApi.Infraestrucure.Data\obj\Debug\net6.0\RestApi.Infraestructure.genruntimeconfig.cache

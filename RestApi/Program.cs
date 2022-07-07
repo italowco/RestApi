@@ -8,7 +8,14 @@ using System.Text;
 using RestApi.Service.Interfaces;
 using RequestLoggingMiddleware.Logging;
 using Elmah.Io.Extensions.Logging;
+using FluentValidation;
 using MassTransit;
+using FluentValidation.AspNetCore;
+using RestApi.Domain.Model;
+using RestApi.Domain.Model.Validators;
+using System.Reflection;
+using RestApi.Infraestructure.Repositories;
+using RestApi.Application.Util;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,22 +37,44 @@ if (builder.Environment.IsDevelopment())
     });
 }
 
+builder.Services.AddSingleton<SqlExceptionHandler>();
 
-builder.Services.AddControllers();
 
+//builder.Services.AddControllers().AddFluentValidation(options =>
+//{
+//    // Validate child properties and root collection elements
+//    //options.ImplicitlyValidateChildProperties = true;
+//    //options.ImplicitlyValidateRootCollectionElements = true;
+//    // Automatic registration of validators in assembly
+//    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+//});
+
+builder.Services.AddControllers().AddFluentValidation();
+builder.Services.AddTransient<IValidator<Product>, CreateProductValidator>();
+
+//builder.Services.AddTransient<IValidator<Product>, CreateProductValidator>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Configuraçoes de banco de dados
-builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(
-    builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DataContext>(opt => {
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
-//builder.Services.AddScoped<DataContext, DataContext>();
+});
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<DataContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+//builder.Services.AddScoped<DataContext, DataContext>();
+
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
@@ -95,16 +124,12 @@ builder.Services.AddMassTransit(x =>
             h.Password("guest");
         });
 
-        //cfg.ReceiveEndpoint("produckQueue", ep =>
-        //{
-        //    ep.PrefetchCount = 10;
-        //    ep.UseMessageRetry(r => r.Interval(2, 100));
-        //    ep.ConfigureConsumer<ProductConsumer>(provider);
-        //});
 
     }));
 });
 
+
+//builder.Services.AddTransient<IValidator, CreateProductValidator>();
 
 builder.Services.AddMassTransitHostedService();
 
@@ -113,6 +138,8 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IScopedService, ScopedService>();
 builder.Services.AddTransient<ITransientService, TransientService>();
 builder.Services.AddSingleton<ISingletonService, SingletonService>();
+
+
 
 var app = builder.Build();
 
@@ -138,7 +165,7 @@ if (app.Environment.IsDevelopment())
 
 //});
 
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<RequestLogging>(); 
 #endregion
 

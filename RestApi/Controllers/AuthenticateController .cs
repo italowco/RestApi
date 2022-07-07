@@ -7,6 +7,7 @@ using System.Text;
 using RestApi.Domain.TO;
 using RestApi.Domain.Model;
 using RestApi.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RestApi.Application.Controllers
 {
@@ -56,29 +57,10 @@ namespace RestApi.Application.Controllers
             return Unauthorized();
         }
 
-        [HttpPost]
-        [Route("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterTO model)
-        {
-            var userExists = await _userManager.FindByNameAsync(model.Username);
-            if (userExists != null)
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
-
-            IdentityUser user = new()
-            {
-                Email = model.Email,
-                SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
-            };
-            var result = await _userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = result.Errors.ToString() });
-
-            return Ok(new Response { Status = "Success", Message = "User created successfully!" });
-        }
 
         [HttpPost]
         [Route("register-admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterTO model)
         {
             var userExists = await _userManager.FindByNameAsync(model.Username);
@@ -111,6 +93,26 @@ namespace RestApi.Application.Controllers
             return Ok(new Response { Status = "Success", Message = "User created successfully!" });
         }
 
+        [HttpPost]
+        [Route("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterTO model)
+        {
+            var userExists = await _userManager.FindByNameAsync(model.Username);
+            if (userExists != null)
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
+
+            IdentityUser user = new()
+            {
+                Email = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = model.Username
+            };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = result.Errors.ToString() });
+
+            return Ok(new Response { Status = "Success", Message = "User created successfully!" });
+        }
 
     }
 }
