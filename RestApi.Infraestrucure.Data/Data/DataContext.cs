@@ -53,20 +53,6 @@ namespace RestApi.Infraestructure.Data
                 }
             }
 
-            //var audit = new Audit
-            //{
-            //    CreatedBy = string.IsNullOrWhiteSpace(userEmail) ? "System" : userEmail
-            //};
-
-            //audit.PreSaveChanges(this);
-            //audit.PostSaveChanges();
-
-            //if (audit.Configuration.AutoSavePreAction != null)
-            //{
-            //    audit.Configuration.AutoSavePreAction(this, audit);
-            //    base.SaveChanges();
-            //}
-
             return base.SaveChanges();
 
         }

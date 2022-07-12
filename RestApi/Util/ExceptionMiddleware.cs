@@ -4,6 +4,7 @@ using RestApi.Domain.Model.Errors;
 using RestApi.Infraestructure.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using FluentValidation;
 
 namespace RestApi.Application.Util
 {
@@ -59,9 +60,6 @@ namespace RestApi.Application.Util
                         ? exception.Message
                         : "You don't have authorization to access this content.";
                     break;
-                //case AmazonS3Exception _:
-                //    detail = "Something went wrong when communicating with the AWS S3 Bucket.";
-                //    break;
                 case DbUpdateException _:
                     var valError = _sqlHandler.ValidateUniqueConstraint(exception);
                     status = HttpStatusCode.UnprocessableEntity;

@@ -40,14 +40,14 @@ if (builder.Environment.IsDevelopment())
 builder.Services.AddSingleton<SqlExceptionHandler>();
 
 
-//builder.Services.AddControllers().AddFluentValidation(options =>
-//{
-//    // Validate child properties and root collection elements
-//    //options.ImplicitlyValidateChildProperties = true;
-//    //options.ImplicitlyValidateRootCollectionElements = true;
-//    // Automatic registration of validators in assembly
-//    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-//});
+builder.Services.AddControllers().AddFluentValidation(options =>
+{
+    // Validate child properties and root collection elements
+    options.ImplicitlyValidateChildProperties = true;
+    options.ImplicitlyValidateRootCollectionElements = true;
+    // Automatic registration of validators in assembly
+    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+});
 
 builder.Services.AddControllers().AddFluentValidation();
 builder.Services.AddTransient<IValidator<Product>, CreateProductValidator>();
@@ -78,7 +78,7 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
-                    // Password settings.
+                // Password settings.
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;

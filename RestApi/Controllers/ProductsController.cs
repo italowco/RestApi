@@ -48,30 +48,9 @@ namespace RestApi.Application.Controllers
         [Route("")]
         public async Task<ActionResult<Product>> Post([FromServices] IProductRepository repository, [FromBody] Product product)
         {
-            CreateProductValidator productValidator = new();
-            var validatorResult = productValidator.Validate(product);
-            
-            if (validatorResult.IsValid)
-            {
-                
-                //context.Add(product);
-                await repository.AddAsync(product);
-                return product;
+            await repository.AddAsync(product);
+            return product;
 
-            }
-            else
-            {
-                
-                List<string> ValidationMessages = new List<string>();
-
-                foreach (ValidationFailure failure in validatorResult.Errors)
-                {
-                    ValidationMessages.Add(failure.ErrorMessage);
-                }
-                var response = new ResponseTO("Bad request", ValidationMessages);
-
-                return BadRequest(response);
-            }
         }
 
         [HttpGet]
